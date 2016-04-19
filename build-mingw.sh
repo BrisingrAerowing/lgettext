@@ -1,0 +1,1 @@
+gcc -shared -o lgettext.dll ${CPPFLAGS} ${LDFLAGS} lua_gettext.c -lintl -llua
