@@ -32,6 +32,16 @@
 #define LC_IDENTIFICATION (-1)
 #endif
 
+#ifndef __unused
+#ifdef _MSC_VER
+#define __unused
+#elif defined(__GNUC__)
+#define __unused __attribute__(unused)
+#else
+#define __unused
+#endif
+#endif
+
 extern int _nl_msg_cat_cntr;
 
 /*** Prototypes ***/
